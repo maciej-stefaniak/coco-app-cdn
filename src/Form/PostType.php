@@ -21,6 +21,7 @@ use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\String\Slugger\SluggerInterface;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 /**
  * Defines the form used to create and manipulate blog posts.
@@ -83,7 +84,9 @@ class PostType extends AbstractType
                     $post->setSlug($this->slugger->slug($post->getTitle())->lower());
                 }
             })
-        ;
+            ->add('imageFile', VichImageType::class, [
+                'required' => false
+            ]);
     }
 
     /**
