@@ -127,8 +127,11 @@
     "league/config": {
         "version": "v1.1.1"
     },
-    "league/uri-parser": {
-        "version": "1.4.1"
+    "league/uri": {
+        "version": "6.5.0"
+    },
+    "league/uri-interfaces": {
+        "version": "2.3.0"
     },
     "masterminds/html5": {
         "version": "2.7.5"
@@ -156,6 +159,9 @@
     },
     "psr/event-dispatcher": {
         "version": "1.0.0"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
     },
     "psr/log": {
         "version": "1.1.4"
@@ -386,9 +392,6 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.23.1"
     },
-    "symfony/polyfill-php81": {
-        "version": "v1.23.0"
-    },
     "symfony/property-access": {
         "version": "v6.0.0"
     },
@@ -530,21 +533,6 @@
     },
     "symfony/yaml": {
         "version": "v6.0.0"
-    },
-    "tgalopin/html-sanitizer": {
-        "version": "1.4.0"
-    },
-    "tgalopin/html-sanitizer-bundle": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "1.0",
-            "ref": "95b935177db9abb65356fe19e57fe5abd908b5b8"
-        },
-        "files": [
-            "config/packages/html_sanitizer.yaml"
-        ]
     },
     "twig/extra-bundle": {
         "version": "v3.3.4"
